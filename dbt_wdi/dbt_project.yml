@@ -1,0 +1,16 @@
+name: 'wdi_dbt'
+version: '1.0.0'
+config-version: 2
+
+profile: 'wdi_dbt'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+
+models:
+  wdi_dbt:
+    +materialized: table
+    +schema: analytics  # New schema

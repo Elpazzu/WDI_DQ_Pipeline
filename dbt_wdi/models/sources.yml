@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: wdi
+    schema: public
+    tables:
+      - name: wdi_data

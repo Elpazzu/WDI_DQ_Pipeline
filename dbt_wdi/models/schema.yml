@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: wdi_curated
+    description: "Filtered WDI data (no null Country Name/Code)"
+    columns:
+      - name: "Country_Code"
+        tests:
+          - not_null
+      - name: "Country_Name"
+        tests:
+          - not_null
+
+sources:
+  - name: wdi
+    tables:
+      - name: wdi_data

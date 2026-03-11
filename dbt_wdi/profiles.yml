@@ -1,0 +1,12 @@
+wdi_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      threads: 4
+      host: localhost
+      port: 5433
+      user: postgres
+      password: mypassword123
+      dbname: wdi_db
+      schema: public  # Source schema
